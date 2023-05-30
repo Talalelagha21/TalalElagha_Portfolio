@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { useRouter } from 'next/navigation';
 import { SocialIcon } from "react-social-icons";
 
 
@@ -11,9 +11,12 @@ import { SocialIcon } from "react-social-icons";
 
 
 const Header = () => {
+
+    const router = useRouter();
+    
      return (
        <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto mt-3
-                          xl:items-center ">
+                          xl:items-center z-10">
             <motion.div className="flex flex-row items-center"
                         initial={{
                             x:-500,
@@ -52,7 +55,7 @@ const Header = () => {
 
                         }}>
                     <SocialIcon className="cursor-pointer" network="email" fgColor="gray" bgColor="transparent" style={{ height: 40, width: 40 }}/>
-                    <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Reach me Here</p>
+                    <a href={"#contact"} onClick={() => router.push('#contact')} className="uppercase hidden md:inline-flex text-sm text-gray-400">Reach me Here</a>
                 </motion.div>
           
        </header>

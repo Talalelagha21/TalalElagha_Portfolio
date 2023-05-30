@@ -3,10 +3,13 @@ import { Cursor, useTypewriter } from "react-simple-typewriter"
 
 import BGSquare from "./BGSquare";
 import Image from "next/image";
-import Link from "next/link";
-
+import { useRouter } from 'next/navigation';
 
 export default function Hero () {
+
+    const router = useRouter();
+   
+
     const [text, count] = useTypewriter({
         words: ["Hey, I'm Talal Elagha", 
                 "Front-end-Developer", 
@@ -28,25 +31,14 @@ export default function Hero () {
                     <Cursor cursorColor="red"/>
                 </h1>
                 <div className="pt-3">
-                    <Link href="#about">
-                        <button className="heroButton">About</button>
-                    </Link>
-
-                    <Link href="#skills">
-                        <button className="heroButton">Skills</button>
-                    </Link>
-
-                    <Link href="#projects">
-                        <button className="heroButton">Projects</button>
-                    </Link>
-
-                    <Link href="#experience">
-                        <button className="heroButton">Experience</button>
-                    </Link>
+                <a href={"#about"} onClick={() => router.push('#about')} className="heroButton">About</a>
+                <a href={"#skills"} onClick={() => router.push('#skills')} className="heroButton">Skills</a>
+                <a href={"#projects"} onClick={() => router.push('#projects')} className="heroButton">Projects</a>
+                <a href={"#experience"} onClick={() => router.push('#experience')} className="heroButton">Experience</a>
+                    
                 </div>
             </div>
         </div>
     )
 }
-
 

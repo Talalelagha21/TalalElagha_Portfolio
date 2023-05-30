@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion"
 import { SocialIcon } from "react-social-icons";
-
+import { project1, project2, project3, project4, project5 } from "./projectsInfo"
 
 
 
 const Projects = () => {
-    const projects = [1,2,3,4,5,6]
+    const projects = [project1, project2, project3, project4, project5]
     return (
         <motion.div 
             initial={{opacity: 0}}
@@ -31,23 +31,19 @@ const Projects = () => {
                             transition={{duration: 1.3}}
                             whileInView={{opacity:1, y:0}}
                             viewport={{once: true}}
-                            src="/SportStatMac.png"/>
+                            src={project.image}/>
                     
                     <div className="space-y-10 px-0 md:px-10 max-4-6xl">
                             
                             <div className="flex items-center space-x-1 justify-center">
                                 <h4 className="text-2xl font-semibold text-center">
-                                    Project {i + 1}: Sports website 
+                                    Project {i + 1}: {project.title} 
                                 </h4>
-                                <SocialIcon url="https://github.com/Talalelagha21" fgColor="gray" bgColor="transparent" style={{ height: 25, width: 25 }}/>
+                                <SocialIcon url={project.link} fgColor="gray" bgColor="transparent" style={{ height: 25, width: 25 }}/>
                             </div>
                             
                         <p className="text-sm text-center md:text-left">
-                            My name is Talal and I am a front-end developer who is actively seeking volunteer opportunities to gain 
-                            hands-on experience and enhance my skills in this field. I was wondering if your organization has any volunteer 
-                            opportunities available for front-end developers. I am eager to contribute to the growth of any organization.
-                            I have experience working with HTML, CSS, JavaScript, and various front-end frameworks and I am confident that my skills would be of 
-                            great value to your team.
+                            {project.summary}
                         </p>
                     </div>
                    </div>
