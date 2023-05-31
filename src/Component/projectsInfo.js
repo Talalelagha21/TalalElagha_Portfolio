@@ -1,7 +1,7 @@
 const project1 = {
     title: "Portfolio Website",
     image: "./PortfolioMac.png",
-    summary: "This project is a personal portfolio website developed to showcase my skills and projects. It demonstrates my proficiency in modern front-end technologies, including Tailwind CSS, React, Next.js, Framer Motion, and Sanity. The portfolio website features a clean and modern design, crafted using Tailwind CSS. Leveraging the utility-first approach, I utilized Tailwind CSS's extensive set of pre-built classes to style the user interface efficiently. To enhance user engagement and interactivity, I incorporated Framer Motion animations throughout the website. ",
+    summary: "This project is a personal portfolio website developed to showcase my skills and projects. It demonstrates my proficiency in modern front-end technologies, including Tailwind CSS, React, Next.js, and Framer Motion. The portfolio website features a clean and modern design, crafted using Tailwind CSS. Leveraging the utility-first approach, I utilized Tailwind CSS's extensive set of pre-built classes to style the user interface efficiently. To enhance user engagement and interactivity, I incorporated Framer Motion animations throughout the website. The portfolio website is deployed on the Vercel platform, taking advantage of Next.js's seamless deployment capabilities. ",
     link: "https://github.com/Talalelagha21/TalalElagha_Portfolio"
 }
 
