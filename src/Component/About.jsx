@@ -34,8 +34,7 @@ const About = () => {
                     and right now, I'm on the lookout for awesome front-end job opportunities. You know what really gets me excited? 
                     Coding and building eye-catching websites that make people go, "Wow!"  When I'm not buried in lines of code, you'll most 
                     likely find me glued to the TV, cheering on my favorite sports teams. I'm a die-hard Arsenal fan, and I also love 
-                    rooting for the Raptors, Leafs, and Blue Jays. Sports just bring out the passion in me!  I'm a hardworking individual who puts 
-                    my heart and soul into every project I tackle. I'm always striving to push myself and produce top-notch work. Learning new things is my jam, 
+                    rooting for the Raptors, Leafs, and Blue Jays. I'm a hardworking individual whos always striving to push myself and produce top-notch work. Learning new things is my jam, 
                     so I'm always up for diving into new frameworks or languages that can take my coding skills to the next level. Right now, I'm all about the 
                     front-end side of things, but I've got my eye on full-stack development too. It's an exciting challenge that I'm eager to explore and grow in.  
                     Oh, and by the way, I also do freelance work on the side. If you've got any cool ideas or projects in mind, shoot me an email. I'm more than 
